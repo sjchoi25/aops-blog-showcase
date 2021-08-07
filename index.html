@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Title</title>
+        <link href="assets/css/fontawesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/codemirrorEdited.css">
+        <link rel="stylesheet" href="/assets/css/feed.css">
+        <link rel="stylesheet" href="/assets/css/community_common.css">
+        <link rel="stylesheet" href="assets/css/hyperion.css">
+
+		<script
+      		src="https://code.jquery.com/jquery-1.10.2.min.js"
+      		integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg="
+      		crossorigin="anonymous"
+    	></script>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div id="navigation_box">
+                <div id="left_navigation_box">
+                    <a href="#">Community</a>
+                    » 
+                    <a href="#">Blogs</a>
+                    » 
+                    <a href="#">Title</a>
+                </div>
+                <div id="right_navigation_box">
+                    <a href="#" id="blog-subscribe" class="clickable" title="Click to receive email notifications for new posts in this blog">
+                    Subscribe</a>
+                    &bull;			
+                    <a href="#" class="blog-logout">Logout</a>
+                    &bull; 
+                    <a class="blog-info" href="#">Blog Info</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- Main content -->
+            <div id="wrapper">
+                <div id="header">
+                    <a data-blog="" href="#">
+                        <h1>Title</h1>
+                    </a>
+                </div>
+                <div id="content">
+                    <div id="main">
+                        <p id="post-new-entry-p">
+                            <img id="post-new-entry-img" src="assets/img/post-new.gif">
+                            <a id="post-new-entry" href="">Post New Entry</a>
+                        </p>
+                        <div class="cmty-post-edited">
+                            <div class="entry">
+                                <h1>
+                                    <a data-blog="" href="#">Test post</a>
+                                </h1>
+                                <h2>
+                                    <a data-blog="" href="#">
+                                    <img src="assets/img/post-target.gif" alt="">
+                                    </a>by <strong><a href="#" style="color: #bd4f17;" class="username-coloured">Username</a></strong>, 2 hours ago
+                                </h2>
+                                <div class="entrywrap">
+                                    <div class="cmty-post-poll">
+                                        <div class="cmty-poll-display">
+                                            <div class="cmty-poll-display-top">
+                                                <span class="aops-font">9</span>Poll:
+                                            </div>
+                                            <div class="cmty-poll-question">
+                                                Yes or no
+                                            </div>
+                                            <div class="cmty-poll-select-no-results">Select <b>1</b> option.</div>
+                                            <div class="cmty-poll-display-data">
+                                                <div class="cmty-poll-option">
+                                                    <div></div>
+                                                    <div class="cmty-poll-result-bar-cell cmty-poll-top-center"> </div>
+                                                    <div>
+                                                        <span class="cmty-poll-num-votes">0 Votes</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cmty-poll-option">
+                                                    <div class="cmty-poll-option-text">
+                                                        <label>
+                                                        <input type="radio" name="poll-options" value="0">
+                                                        Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="cmty-poll-result-bar-cell">
+                                                        <div class="cmty-poll-result-bar" style="width:100%">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cmty-poll-result-data">
+                                                        <div class="cmty-poll-result-percent">
+                                                            100%
+                                                        </div>
+                                                        <div class="cmty-poll-result-number">(1)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="cmty-poll-option">
+                                                    <div class="cmty-poll-option-text">
+                                                        <label>
+                                                        <input type="radio" name="poll-options" value="1">
+                                                        No
+                                                        </label>
+                                                    </div>
+                                                    <div class="cmty-poll-result-bar-cell">
+                                                        <div class="cmty-poll-result-bar" style="width:0%">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cmty-poll-result-data">
+                                                        <div class="cmty-poll-result-percent">
+                                                            0%
+                                                        </div>
+                                                        <div class="cmty-poll-result-number">
+                                                            (0)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cmty-poll-vote-row">
+                                                <input type="button" class="btn btn-primary" value="VOTE">
+                                            </div>
+                                            <div class="cmty-poll-results-toggle">
+                                                <span class="faux-link cmty-poll-hide-results">
+                                                Hide Results
+                                                </span>
+                                                <span class="faux-link cmty-poll-show-results">
+                                                Show Results
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message">
+                                        Hide tags:<br>
+                                        <span class="cmty-hide-heading faux-link" onclick="toggleHide('1')" href="#">Hidden</span>
+                                        <div class="cmty-hide-content" style="display:none" id="hide1">
+                                            Text that is hidden
+											<span class="cmty-hide-heading faux-link" onclick="toggleHide('2')" href="#">Nested</span>
+                                            <div class="cmty-hide-content" style="display:none" id="hide2">
+                                                Hi this is nested
+												<span class="cmty-hide-heading faux-link" onclick="toggleHide('3')" href="#">Click</span>
+                                                <div class="cmty-hide-content" style="display:none" id="hide3">Another nest</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        Tips:<br>
+                                        <span class="cmty-tip-header first-time" onmouseover="mouseOver()" onmouseout="mouseOut()" href="#">Hover</span>
+                                        <div class="cmty-tip-triangle" style="margin-left: 20px;display: none;"></div>
+                                        <div class="cmty-tip-content" style="display: none;margin-top: 10px;">Tips!</div>
+                                        <br>
+                                        <br>
+                                        Lists:
+                                        <ol class="bbcode_list">
+                                            <li>Ordered item</li>
+                                            <li>Ordered item</li>
+                                        </ol>
+                                        <ul class="bbcode_list">
+                                            <li>Unordered item</li>
+                                            <li>Unordered item</li>
+                                        </ul>
+                                        <br>
+                                        LaTeX:<br>
+                                        <span style="white-space:pre;"><img src="assets/img/latex.png" class="latex" alt="$\LaTeX$" style="vertical-align: -4px" width="46" height="15">,</span> <img src="assets/img/latexcenter.png" class="latexcenter" alt="$$ettest$$" width="44" height="11"><br>
+                                        Asymptote:<br>
+                                        <img src="assets/img/asy.png" class="asy-image" width="252" height="175" alt="[asy]draw((0,0)..(2,1)..(3,1)..(2,2));[/asy]"><br>
+                                        <br>
+                                        Code:<br>
+                                        <pre style="background-color:#f4f4f4;padding:10px" class=" language-none"><code class=" language-none">//This is code</code></pre>
+                                        <br>
+                                        <br>
+                                        Pywindows:<br>
+                                        <div id="pywindow480a4fbde3099a41f922f2d764a8ccb8" class="pywindow" style="z-index:0">
+                                            <div style="display: block">
+                                                <div class="pywindow-temp-preview-code pywindow-one-digit-lines" onclick="pythonTool.addCodeSourceAndClick(event);">
+                                                    <pre class="python" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #ff7700;font-weight:bold;">print</span><span style="color: black;">(</span><span style="color: #483d8b;">"hello there"</span><span style="color: black;">)</span></div></li></ol></pre>
+                                                </div>
+                                                <textarea rows="1" id="pywindow480a4fbde3099a41f922f2d764a8ccb8_code" style="display:none;" class="active-code" prefixcode="undefined">print("hello there")</textarea>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn btn-run" onclick="pythonTool.addCodeSourceAndRun('pywindow480a4fbde3099a41f922f2d764a8ccb8', false);">Run</button><button type="button" class="btn btn-reset" onclick="pythonTool.addCodeSource('pywindow480a4fbde3099a41f922f2d764a8ccb8', false);">Reset</button><button type="button" class="btn btn-link btn-pop" onclick="pythonTool.addCodeSourceAndPop('pywindow480a4fbde3099a41f922f2d764a8ccb8', false);">Pop Out <span class="aops-font">/</span></button>
+                                                <div style="clear:both"></div>
+                                            </div>
+                                            <div id="pywindow480a4fbde3099a41f922f2d764a8ccb8_error"></div>
+                                            <div style="text-align: center">
+                                                <canvas id="pywindow480a4fbde3099a41f922f2d764a8ccb8_canvas" class="ac-canvas" height="400px" width="400px" style="border-style: solid; display: none; text-align: center"></canvas>
+                                            </div>
+                                            <pre id="pywindow480a4fbde3099a41f922f2d764a8ccb8_pre" class="active-out active-out-hidden"></pre>
+                                            <div id="pywindow480a4fbde3099a41f922f2d764a8ccb8_files" class="ac-files ac-files-hidden"></div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        Smileys:<br>
+                                        <img src="assets/img/grin.gif" alt=":D" title=":D" class="bbcode_smiley">  
+										<img src="assets/img/unsure.gif" alt=":maybe:" title=":maybe:" class="bbcode_smiley">  
+										<img src="assets/img/grin2.gif" alt=":-D" title=":-D" class="bbcode_smiley">  
+										<img src="assets/img/smile.gif" alt=":)" title=":)" class="bbcode_smiley">    
+										<img src="assets/img/rotfl.gif" alt=":rotfl:" title=":rotfl:" class="bbcode_smiley">
+										<br>
+                                        <br>
+                                        Links:<br>
+                                        <a href="https://google.com" class="bbcode_url" target="_blank" rel="nofollow">Go to Google!</a><br>
+                                        <br>
+                                        Quotes:
+                                        <div class="bbcode_quote">
+                                            <div class="bbcode_quote_head">Somebody wrote:</div>
+                                            <div class="bbcode_quote_body">
+                                                Quoted text
+                                                <div class="bbcode_quote">
+                                                    <div class="bbcode_quote_head">Person wrote:</div>
+                                                    <div class="bbcode_quote_body">
+                                                        This is a nested quote
+                                                        <div class="bbcode_quote">
+                                                            <div class="bbcode_quote_head">Quote:</div>
+                                                            <div class="bbcode_quote_body">More nested</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        Images:<br>
+                                        <img class="bbcode_img" src="assets/img/logo.svg" alt="AoPS Logo" width="20%"><br>
+                                        <img class="bbcode_img" src="assets/img/logo.svg" alt="AoPS Logo" width="100%"><br>
+                                        <br>
+                                        This post has been edited <img src="assets/img/ninja.gif" alt=":ninja:" title=":ninja:" class="bbcode_smiley">
+                                    </div>
+                                    <div class="cmty-post-attachments"></div>
+                                    <div class="cmty-post-edit-info">This post has been edited 1 time. Last edited by Username, 1 minute ago<br>Reason: Edit reason</div>
+                                    <div class="cmty-tags-itembox-wrapper">
+                                        <div class="cmty-itembox">
+                                            <a data-blog="" href="#">
+                                                <div class="cmty-item-tag" style="background-color: rgb(53, 108, 181);">Test tag</div>
+                                            </a>
+                                            <a data-blog="" href="#">
+                                                <div class="cmty-item-tag" style="background-color: rgb(53, 108, 181);">Test tag number two</div>
+                                            </a>
+                                            <a data-blog="" href="#">
+                                                <div class="cmty-item-tag" style="background-color: rgb(53, 108, 181);">poll</div>
+                                            </a>
+                                            <div title="Edit tags" class="cmty-item-tag cmty-edit-tag aops-font" style="background-color: rgb(53, 108, 181);">L</div>
+                                        </div>
+                                    </div>
+                                    <div class="efooter">
+                                        <div class="actions">
+                                            <ul>
+                                                <li><a data-blog="" class="post-replies" href="#">2 Comments</a></li>
+                                                <li><a data-blog="" class="post-comment" href="#">(Post Your Comment)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modactions">
+                                            <ul>
+                                                <li><a href="#" class="blog-edit-post" title="Edit"><span>Edit</span></a></li>
+                                                <li><a href="#" class="blog-moderate-topic" title="Moderate"><span>Moderate</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="side">
+                        <div id="user-menu-widget" class="block user_menu">
+                            <div style="text-align:center">
+                                <p class="description">Description of blog.</p>
+                                <p class="avatar"><img src="assets/img/avatar.png" width="70" height="70" alt="avatar"></p>
+                                <strong class="user-full">
+                                <a href="#" class="username-colored">Username</a>
+                                </strong>
+                            </div>
+                        </div>
+                        <div id="archive-widget" class="widget">
+                            <div class="widget-header">
+                                <div class="widget-title">Archives</div>
+                            </div>
+                            <div class="widget-settings"></div>
+                            <div class="widget-content">
+                                <div class="archive-month archive-2021">
+                                    <span class="archive-month-header">
+                                    <strong>
+                                    <img class="month-image" alt="-" src="assets/img/minus.gif">
+                                    July 2021
+                                    </strong>
+                                    </span>
+                                    <div class="archive-month-topics ">
+                                        <div class="archive-row">
+                                            <a href="#" data-blog="">Test post</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-footer"></div>
+                        </div>
+                        <div id="shouts-widget" class="widget">
+                            <div class="widget-header">
+                                <div class="widget-title">Shouts</div>
+                            </div>
+                            <div id="message-box">
+                                <textarea id="message" class="inputbox" cols="10" rows="6" readonly></textarea>
+                            </div>
+                            <div class="widget-settings"></div>
+                            <div class="widget-content">
+                                <fieldset class="blog-shout-wrapper">
+                                    <div class="aops-scroll-outer blog-scroll-outer aops-scrollbar-visible">
+                                        <div class="aops-scroll-bar">
+                                            <div class="aops-scroll-slider" style="display: block; top: 0px; height: 157.97077244258872px;"></div>
+                                        </div>
+                                        <div class="aops-scroll-inner" style="overflow-y: scroll; width: calc(100% + 15px);">
+                                            <ul class="aops-scroll-content" style="max-width: calc(100% - 24px);">
+                                                <li class="blog-shout row1" style="display: list-item;">
+                                                    <p></p>
+                                                    A test shout!
+                                                    <p><span class="aops-icon blog-delete-shout">J</span>by
+                                                        <a href="#">Person 3</a>, a few seconds ago
+                                                    </p>
+                                                </li>
+												<li class="blog-shout row2" style="display: list-item;">
+                                                    <p></p>
+                                                    Second shout!
+                                                    <p><span class="aops-icon blog-delete-shout">J</span>by
+                                                        <a href="#">Person 2</a>, a minute ago
+                                                    </p>
+                                                </li>
+												<li class="blog-shout row1" style="display: list-item;">
+                                                    <p></p>
+                                                    First shout!
+                                                    <p><span class="aops-icon blog-delete-shout">J</span>by
+                                                        <a href="#">Person 1</a>, 2 minutes ago
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <span class="blog-num-shouts">3 shouts</span>
+                            </div>
+                            <div class="widget-footer"></div>
+                        </div>
+                        <div>
+                            <div class="widget-header">
+                                <div class="widget-title">Tags</div>
+                            </div>
+                            <div class="widget-settings"></div>
+                            <div class="widget-content">
+                                <fieldset class="blog-tags-wrapper">
+                                    <div class="cmty-itembox">
+                                        <div class="aops-scroll-outer aops-scrollbar-not-visible blog-scroll-outer">
+                                            <div class="aops-scroll-bar" style="display: none;">
+                                                <div class="aops-scroll-slider" style="display: none; top: -973.9354838709678px; height: 1257.9354838709678px;"></div>
+                                            </div>
+                                            <div class="aops-scroll-inner" style="overflow-y: scroll; width: calc(100% + 15px);">
+                                                <div class="cmty-itembox-inner-box aops-scroll-content">
+                                                    <a data-blog="" href="#">
+                                                        <div style="background-color:#356cb5" class="cmty-item-tag">poll</div>
+                                                    </a>
+                                                    <a data-blog="" href="#">
+                                                        <div style="background-color:#356cb5" class="cmty-item-tag">Test tag</div>
+                                                    </a>
+                                                    <a data-blog="" href="#">
+                                                        <div style="background-color:#356cb5" class="cmty-item-tag">Test tag number two</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="widget-footer"></div>
+                        </div>
+                        <div id="about-owner-widget" class="block widget">
+                            <div class="widget-header">
+                                <div class="widget-title">About Owner</div>
+                            </div>
+                            <div class="widget-settings"></div>
+                            <div class="widget-content">
+                                <ul style="padding-bottom:0;margin-bottom:0;">
+                                    <li style="padding-bottom:3px;">
+                                        <strong>Posts:</strong>
+                                        -1
+                                    </li>
+                                    <li style="padding-bottom:3px;">
+                                        <strong>Joined:</strong>
+                                        Today
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget-footer"></div>
+                        </div>
+                        <div id="stats-widget" class="block widget">
+                            <div class="widget-header">
+                                <div class="widget-title">Blog Stats</div>
+                            </div>
+                            <div class="widget-settings"></div>
+                            <div class="widget-content">
+                                <ul style="padding-bottom:0;margin-bottom:0;">
+                                    <li style="padding-bottom:3px;">
+                                        <strong>Blog created:</strong>
+                                        3 hours ago
+                                    </li>
+                                    <li style="padding-bottom:3px;">
+                                        <strong>Total entries:</strong>
+                                        1
+                                    </li>
+                                    <li style="padding-bottom:3px;">
+                                        <strong>Total visits:</strong>
+                                        99999
+                                    </li>
+                                    <li style="padding-bottom:3px;">
+                                        <strong>Total comments:</strong>
+                                        2
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget-footer"></div>
+                        </div>
+                        <div id="search-widget" class="block widget">
+                            <div class="widget-header">
+                                <div class="widget-collapse"></div>
+                                <div class="widget-config"></div>
+                                <div class="widget-title">Search Blog</div>
+                            </div>
+                            <div class="widget-settings"></div>
+                            <div class="widget-content">
+                                <form id="blog_searchform">
+                                    <fieldset>
+                                        <input name="keywords" id="blog_keywords" type="text" maxlength="128" class="inputbox search" placeholder="Enter term">
+                                        <div style="text-align:right;margin-top:3px"><input class="button2" value="Search" type="submit"></div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="widget-footer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+		<script src="http://artofproblemsolving.com/assets/vendor/jqueryui/1.10.3/jquery-ui.min.js?__v__=3324"></script>
+    	<script src="http://artofproblemsolving.com/assets/vendor/jquery.editable.js?__v__=3324"></script>
+
+		<script src="assets/js/codemirror-compressed.js"></script>
+    	<script src="assets/js/skulpt.min.js"></script>
+    	<script src="assets/js/skulpt-stdlib.js"></script>
+    	<script src="assets/js/aopsmods.js"></script>
+
+		<!-- THIS SCRIPT IS NOT AOPS' SCRIPT -->
+		<script src="assets/js/script.js"></script>
+
+		<div id="feed-wrapper" class="cmty-show-feed-tags"><div id="feed-left"><div data-hj-suppress="" data-hj-masked="" id="feed-tabs">
+			<div id="feed-global-tab" class="feed-tab aops-font feed-subfeed-new-topic" title="Global feed
+				Recent topics in select forums
+				See Community Help to customize">a
+			</div>
+			<div id="feed-egosearch-tab" class="feed-tab aops-font feed-subfeed-new-topic" title="My Topics feed
+				Topics I have posted in">w
+			</div>
+			<div id="feed-privates-tab" class="feed-tab aops-font" title="Private feed
+				My private messages">m
+			</div>
+			<div id="feed-bookmark-tab" title="Bookmark feed
+				Topics from bookmarked tags, forums, and topics" class="feed-tab aops-font feed-subfeed-new-topic">E
+			</div>
+		</div>
+		<div data-hj-suppress="" data-hj-masked="" id="feed-topic"></div>
+		</div>
+		<div data-hj-suppress="" data-hj-masked="" id="feed-topic-list"></div>
+		</div>
+    </body>
+</html>
