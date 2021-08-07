@@ -120,7 +120,7 @@ img {
 }
 
 #wrapper {
-	background: white url(/assets/img/bg.png) repeat-y scroll
+	background: white url(/aops-blog-showcase/assets/img/bg.png) repeat-y scroll
 		right center;
 	border-bottom: 1px solid #bcbcbc;
 	border-left: 1px solid #bcbcbc;
