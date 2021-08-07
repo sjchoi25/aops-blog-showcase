@@ -34,10 +34,10 @@
 
 @font-face {
 	font-family: "AoPS";
-	src: url("/assets/font/new_aops.eot");
-	src: url("/assets/font/new_aops.eot") format("embedded-opentype"),
-		url("/assets/font/new_aops.woff") format("woff"),
-		url("/assets/font/new_aops.woff") format("truetype");
+	src: url("/aops-blog-showcase/assets/font/new_aops.eot");
+	src: url("/aops-blog-showcase/assets/font/new_aops.eot") format("embedded-opentype"),
+		url("/aops-blog-showcase/assets/font/new_aops.woff") format("woff"),
+		url("/aops-blog-showcase/assets/font/new_aops.woff") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	-khtml-user-select: none;
