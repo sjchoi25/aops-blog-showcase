@@ -16,3 +16,10 @@ function toggleHide(num) {
     	document.querySelector(`#hide${num}`).style.display = "none";
   	}
 }
+
+// Add css
+const urlParams = new URLSearchParams(window.location.search);
+const src = urlParams.get('src');
+if (src) {
+	$('head').append(`<link rel="stylesheet" href="${src}">`);
+}
