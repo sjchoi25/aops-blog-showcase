@@ -19,7 +19,7 @@ function toggleHide(num) {
 
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
-	document.querySelector("#test-post").style.display = "block";
+	document.querySelector("#test-post").style.display = "inline";
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
