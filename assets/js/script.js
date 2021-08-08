@@ -8,6 +8,8 @@ const nav_default = `
 <a href id="blog-title" onclick="hide_comments()">My Blog!</a>
 `;
 
+let shown = false;
+
 function mouseOver() {
 	document.querySelector(".cmty-tip-triangle").style.display = "block";
 	document.querySelector(".cmty-tip-content").style.display = "block";
@@ -27,11 +29,14 @@ function toggleHide(num) {
 
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
-	document.querySelector("#left_navigation_box").innerHTML = nav_default + "» <a href>Test post</a>";
+	if (!shown) {
+		document.querySelector("#left_navigation_box").innerHTML += "» <a href>Test post</a>";
+	}
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
 	document.querySelector("#left_navigation_box").innerHTML = nav_default;
+	shown = false;
 }
 
 // Add css
