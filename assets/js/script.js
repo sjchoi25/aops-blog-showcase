@@ -19,9 +19,11 @@ function toggleHide(num) {
 
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
+	document.querySelector("#test-post").style.display = "block";
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
+	document.querySelector("#test-post").style.display = "none";
 }
 
 // Add css
