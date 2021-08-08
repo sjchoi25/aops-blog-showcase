@@ -1,5 +1,13 @@
 // This is not AoPS' own script
 
+const nav_default = `
+<a href="#">Community</a>
+» 
+<a href="#">Blogs</a>
+» 
+<a href="#" id="blog-title" onclick="hide_comments()">My Blog!</a>
+`;
+
 function mouseOver() {
 	document.querySelector(".cmty-tip-triangle").style.display = "block";
 	document.querySelector(".cmty-tip-content").style.display = "block";
@@ -19,11 +27,11 @@ function toggleHide(num) {
 
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
-	document.querySelector("#test-post").style.display = "inline";
+	document.querySelector("#left_navigation_box").innerHTML = nav_default + "» <a href="#">Test post</a>";
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
-	document.querySelector("#test-post").style.display = "none";
+	document.querySelector("#left_navigation_box").innerHTML = nav_default;
 }
 
 // Add css
