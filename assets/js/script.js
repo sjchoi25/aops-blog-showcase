@@ -27,5 +27,6 @@ const title = urlParams.get("name");
 
 if (title) {
 	document.querySelector("#header h1").textContent = title;
+	document.querySelector("#blog-title").textContent = title;
 	document.title = title;
 }
