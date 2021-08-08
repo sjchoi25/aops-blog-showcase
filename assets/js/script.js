@@ -1,14 +1,12 @@
 // This is not AoPS' own script
 
 const nav_default = `
-<a href>Community</a>
+<a href="#">Community</a>
 » 
-<a href>Blogs</a>
+<a href="#">Blogs</a>
 » 
-<a href id="blog-title" onclick="hide_comments()">My Blog!</a>
-`;
+<a href="#" id="blog-title" onclick="hide_comments()">My Blog!</a>`;
 
-let shown = false;
 
 function mouseOver() {
 	document.querySelector(".cmty-tip-triangle").style.display = "block";
@@ -29,15 +27,11 @@ function toggleHide(num) {
 
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
-	if (!shown) {
-		document.querySelector("#left_navigation_box").innerHTML += "» <a href>Test post</a>";
-		shown = true;
-	}
+	document.querySelector("#left_navigation_box").innerHTML = nav_default + '» <a href="#">Test post</a>';
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
 	document.querySelector("#left_navigation_box").innerHTML = nav_default;
-	shown = false;
 }
 
 // Add css
