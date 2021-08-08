@@ -10,11 +10,18 @@ function mouseOut() {
 }
 function toggleHide(num) {
 	if (document.querySelector(`#hide${num}`).style.display == "none") {
-    	document.querySelector(`#hide${num}`).style.display = "block";
+    		document.querySelector(`#hide${num}`).style.display = "block";
   	}
   	else {
-    	document.querySelector(`#hide${num}`).style.display = "none";
+    		document.querySelector(`#hide${num}`).style.display = "none";
   	}
+}
+
+function show_comments() {
+	document.querySelector("#comments-wrap").style.display = "block";
+}
+function hide_comments() {
+	document.querySelector("#comments-wrap").style.display = "none";
 }
 
 // Add css
