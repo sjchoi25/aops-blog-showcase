@@ -31,6 +31,7 @@ function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
 	if (!shown) {
 		document.querySelector("#left_navigation_box").innerHTML += "» <a href>Test post</a>";
+		shown = true;
 	}
 }
 function hide_comments() {
