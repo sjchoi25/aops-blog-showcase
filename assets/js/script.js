@@ -21,5 +21,5 @@ function toggleHide(num) {
 const urlParams = new URLSearchParams(window.location.search);
 const src = urlParams.get('src');
 if (src) {
-	$('head').append(`<link rel="stylesheet" href="${src}">`);
+	document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${src}">`;
 }
