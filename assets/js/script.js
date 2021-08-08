@@ -25,7 +25,7 @@ if (src) {
 }
 const title = urlParams.get("name");
 
-if (name) {
-	document.querySelector("#header h1").textContent = name;
-	document.title = name;
+if (title) {
+	document.querySelector("#header h1").textContent = title;
+	document.title = title;
 }
