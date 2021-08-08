@@ -20,7 +20,7 @@ function toggleHide(num) {
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
 	// Something seems to be weird here.
-	document.querySelector("#left_navigation_box").innerHTML = nav_default + '\n» \n<a href="#">Test post</a>';
+	document.querySelector("#left_navigation_box").innerHTML = nav_default + '» <a href="#">Test post</a>';
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
