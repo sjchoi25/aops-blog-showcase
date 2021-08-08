@@ -23,3 +23,9 @@ const src = urlParams.get('src');
 if (src) {
 	document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${src}">`;
 }
+const title = urlParams.get("name");
+
+if (name) {
+	document.querySelector("#header h1").textContent = name;
+	document.title = name;
+}
