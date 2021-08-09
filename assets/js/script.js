@@ -1,4 +1,4 @@
-// This is not AoPS' own script
+// This is not AoPS' own script, it is created by me (Nhv24/player01)
 
 function mouseOver() {
 	document.querySelector(".cmty-tip-triangle").style.display = "block";
