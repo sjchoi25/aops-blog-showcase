@@ -54,10 +54,3 @@ const nav_default = `
 <a href="#" id="blog-title" onclick="hide_comments()">${title ? title : "My Blog!"}</a>`;
 
 let replaced = false;
-
-$('#wrapper').prepend(`
-<div id="header">
-    <a data-blog="" href="#">
-    	<h1>${title ? title : "My Blog!"}</h1>
-    </a>
-</div>`)
