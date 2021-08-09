@@ -19,13 +19,17 @@ function toggleHide(num) {
 
 function show_comments() {
 	document.querySelector("#comments-wrap").style.display = "block";
-	document.querySelector("#post-sep").style.display = "inline";
-	document.querySelector("#post-title").style.display = "inline-block";
+	if (!replaced) {
+		document.querySelector("#left_navigation_box").innerHTML += '» <a href="#">Test post</a>';
+		replaced = true;
+	}
 }
 function hide_comments() {
 	document.querySelector("#comments-wrap").style.display = "none";
-	document.querySelector("#post-sep").style.display = "none";
-	document.querySelector("#post-title").style.display = "none";
+	if (replaced) {
+		document.querySelector("#left_navigation_box").innerHTML = nav_default;
+		replaced = false;
+	}
 }
 
 // Add css
@@ -41,3 +45,12 @@ if (title) {
 	document.querySelector("#blog-title").textContent = title;
 	document.title = title;
 }
+
+const nav_default = `
+<a href="#">Community</a>
+» 
+<a href="#">Blogs</a>
+» 
+<a href="#" id="blog-title" onclick="hide_comments()">${title ? title : "My Blog!"}</a>`;
+
+let replaced = false;
