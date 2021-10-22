@@ -6,7 +6,7 @@ All credit goes to Art of Problem Solving for 99% of the code here. I only edite
 This code is not created by or affiliated in any way with Art of Problem Solving Inc.
 
 ## NOTE:
-There is currently an error with length limits in the CSS, causing the post not to show up if lenght limits are used.
+There is currently an error with length limits in the CSS, causing the post not to show up if lenght limits are used. Please be aware of this when using the website (who uses this, anyway?).
 
 ## License
 MIT
